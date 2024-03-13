@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCF5F8F8"
+    android:gravity="center_horizontal|left"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="359dp"
+        android:layout_height="58dp"
+        android:background="#641EE1"
+        android:backgroundTintMode="add"
+        android:text="Peso Ideal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FAF8F8" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:buttonTint="#000000"
+            android:text="Masculino"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="Feminino" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editHeight"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="373dp"
+        android:layout_height="97dp"
+        android:layout_weight="0"
+        android:hint="Escreva sua altura:"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="@android:style/Widget.Button.Toggle"
+        android:layout_width="248dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center|center_horizontal"
+        android:backgroundTint="#5F04FF"
+        android:backgroundTintMode="multiply"
+        android:rotationX="0"
+        android:scaleX="1"
+        android:text="Calcular Peso Ideal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E8E0E0" />
+
+
+</LinearLayout>
+
